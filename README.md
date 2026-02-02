@@ -58,3 +58,28 @@ technical-learning-log/
 │   ├── arquitetura-de-software.md
 │   ├── backlog-e-indicadores.md
 │   └── boas-praticas.md
+
+
+🚫 O que NÃO é este repositório
+
+Não é um repositório de projetos completos
+
+Não contém código proprietário
+
+Não contém dados sensíveis ou informações confidenciais
+
+Não representa documentação oficial de empresas
+
+Todo conteúdo é generalizado e anonimizado, com foco em aprendizado e metodologia.
+
+📈 Filosofia
+
+Aprender, registrar, refletir e evoluir.
+
+O conhecimento só se consolida quando é organizado e revisitado.
+Este repositório é parte ativa desse processo.
+
+📬 Observação final
+
+Este é um repositório vivo, em constante evolução.
+A estrutura e os conteúdos podem mudar conforme o aprendizado amadurece.
