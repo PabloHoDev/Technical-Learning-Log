@@ -199,3 +199,146 @@ Código com testes continua funcionando amanhã.
 
 Qualidade de software não é apenas entregar rápido —
 é entregar algo sustentável.
+
+
+✅ Checklist de Qualidade de Código em Python
+📌 1. Legibilidade
+
+ Os nomes de variáveis são claros e descritivos? (total_price em vez de tp)
+
+ As funções têm nomes que explicam o que fazem?
+
+ O código evita abreviações desnecessárias?
+
+ O código segue o padrão PEP 8?
+
+ A indentação está correta (4 espaços)?
+
+📌 2. Organização e Estrutura
+
+ Cada função faz apenas uma responsabilidade?
+
+ O código está dividido em módulos quando necessário?
+
+ Não há duplicação de código (DRY – Don't Repeat Yourself)?
+
+ As funções não são excessivamente longas?
+
+ As classes têm responsabilidades bem definidas?
+
+📌 3. Boas Práticas Python
+
+ Uso adequado de list comprehensions?
+
+ Uso correto de with para arquivos?
+
+ Uso de enumerate() em vez de contador manual?
+
+ Uso de zip() quando apropriado?
+
+ Uso de f-strings em vez de concatenação antiga?
+
+Exemplo ruim:
+
+print("Nome: " + nome)
+
+
+Exemplo melhor:
+
+print(f"Nome: {nome}")
+
+📌 4. Tratamento de Erros
+
+ Uso adequado de try/except?
+
+ Não usa except: genérico?
+
+ Erros são tratados de forma clara?
+
+ Não oculta erros silenciosamente?
+
+Exemplo ruim:
+
+try:
+    x = 10 / 0
+except:
+    pass
+
+
+Exemplo melhor:
+
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Divisão por zero não é permitida.")
+
+📌 5. Performance
+
+ Evita loops desnecessários?
+
+ Evita cálculos repetidos?
+
+ Usa estruturas adequadas (set para busca rápida)?
+
+ Evita criar listas quando pode usar generators?
+
+Exemplo:
+
+# Melhor para grandes volumes
+soma = sum(x for x in range(1000000))
+
+📌 6. Testes
+
+ O código tem testes?
+
+ Funções são testáveis isoladamente?
+
+ Não depende de input direto dentro da lógica?
+
+ Usa pytest ou unittest?
+
+📌 7. Segurança
+
+ Não há senhas hardcoded?
+
+ Não usa eval() desnecessariamente?
+
+ Valida dados de entrada?
+
+ Evita SQL Injection (se usar banco)?
+
+📌 8. Documentação
+
+ Funções têm docstrings?
+
+ O código explica o “porquê”, não o óbvio?
+
+ Existe README no projeto?
+
+ Tipagem com type hints foi usada?
+
+Exemplo:
+
+def calcular_total(preco: float, quantidade: int) -> float:
+    """Calcula o valor total com base no preço e quantidade."""
+    return preco * quantidade
+
+📌 9. Código Limpo
+
+ Não há prints de debug esquecidos?
+
+ Não há código comentado desnecessário?
+
+ Imports estão organizados?
+
+ Variáveis não utilizadas foram removidas?
+
+🧠 Checklist Rápido para Revisão Final
+
+Antes de entregar:
+
+✔ O código é fácil de entender em 1 leitura?
+✔ Outro desenvolvedor conseguiria manter isso?
+✔ Está preparado para falhas?
+✔ Está testado?
+✔ Está seguindo padrões do Python?
