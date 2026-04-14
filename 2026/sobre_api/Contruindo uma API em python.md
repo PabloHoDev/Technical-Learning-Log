@@ -151,3 +151,24 @@ Abra:
 👉 http://127.0.0.1:8000/docs
 
 Você terá o Swagger automático 🔥
+
+📌 O que você acabou de construir
+
+✔ API REST funcional
+✔ CRUD completo
+✔ Estrutura em camadas
+✔ Separação de responsabilidades
+✔ Base profissional
+
+🚀 Próximos Upgrades (Muito Importante)
+
+Agora vem o diferencial:
+
+🔹 Melhorias que deixam seu projeto forte
+ Usar Pydantic (validação)
+ Adicionar banco de dados (SQLite/PostgreSQL)
+ Implementar testes com pytest
+ Criar autenticação JWT
+ Melhorar tratamento de erros
+ Padronizar respostas
+ Adicionar logs
