@@ -111,3 +111,43 @@ class UsuarioService:
 
     def deletar(self, id):
         repo.remover(id)
+
+🌐 6️⃣ Interface (Controller)
+📄 interfaces/usuario_controller.py
+from fastapi import APIRouter, HTTPException
+from src.aplicacao.usuario_service import UsuarioService
+
+router = APIRouter(prefix="/usuarios")
+
+service = UsuarioService()
+
+@router.get("/")
+def listar():
+    return service.listar()
+
+@router.post("/")
+def criar(id: int, nome: str):
+    return service.criar(id, nome)
+
+@router.get("/{id}")
+def buscar(id: int):
+    try:
+        return service.buscar(id)
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+@router.delete("/{id}")
+def deletar(id: int):
+    service.deletar(id)
+    return {"mensagem": "Usuário removido"}
+
+▶️ 7️⃣ Rodando o Projeto
+uvicorn src.main:app --reload
+
+🌐 8️⃣ Testando no Navegador
+
+Abra:
+
+👉 http://127.0.0.1:8000/docs
+
+Você terá o Swagger automático 🔥
