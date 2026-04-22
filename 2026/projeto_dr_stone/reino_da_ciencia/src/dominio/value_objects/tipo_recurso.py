@@ -4,3 +4,5 @@ class TipoRecurso(Enum):
     PEDRA = "pedra"
     FERRO = "ferro"
     ALIMENTO = "alimento"
+    VIDRO = "vidro"
+    AÇO = "aço"
